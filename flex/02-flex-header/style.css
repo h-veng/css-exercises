@@ -1,6 +1,9 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -9,11 +12,24 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+  margin: 10px 0px;
 }
 
-ul {
+/* I would argue that we use "header ul" rather
+ * than just ul so as not to target any ul that
+ * is part of the content and not the header.
+ */
+.header ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 10px;
+  /* border: solid black; */
+}
+
+.header li {
+  margin: 0 10px;
 }
 
 a {
